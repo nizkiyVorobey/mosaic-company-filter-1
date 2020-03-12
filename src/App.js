@@ -33,17 +33,19 @@ function App() {
           </div>
         </div>
         {
-          emptyList ?
-            <p>Empty</p>
+          emptyList
+            ? <p className="message">Empty</p>
             : inputError
-            ? <p>Error</p>
-            : (
-              <div className="user-list-body">
-                {
-                  userSorted.map(user => <UserList user={user} key={user.company}/>)
-                }
-              </div>
-            )
+              ? <p className="message">Error</p>
+              : (
+                <div className="user-list-body">
+                  {
+                    userSorted.map(user => (
+                      <UserList user={user} key={user.company} />
+                    ))
+                  }
+                </div>
+              )
         }
       </div>
 

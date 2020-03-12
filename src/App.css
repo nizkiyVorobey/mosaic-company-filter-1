@@ -39,3 +39,8 @@
   display: flex;
   justify-content: space-between;
 }
+
+.message {
+  text-align: center;
+  font-size: 25px;
+}
