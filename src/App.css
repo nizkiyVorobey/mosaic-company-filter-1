@@ -4,7 +4,7 @@
 
 .user-list {
   max-width: 900px;
-  margin: auto;
+  margin: 50px auto auto;
   text-align: left;
   padding: 0 20px;
 }
@@ -17,11 +17,16 @@
   border: 1px solid black;
   display: flex;
   justify-content: space-between;
+  padding-left: 10px;
 }
 
 .user-list-title-item-column {
   padding: 10px 0;
   width: 100px;
+}
+
+.user-list-body {
+  padding-left: 10px;
 }
 
 .user-item {
@@ -33,5 +38,4 @@
 .user-list-item-row {
   display: flex;
   justify-content: space-between;
-  /*border: 1px solid black;*/
 }
